@@ -7,7 +7,9 @@
 
  // this class handles all
  // the variables we shall be using 
- //through out the program 
+ //through out the program
+
+ import java.util.*;
  class Variables {
         // products
         char pms; // petrol
@@ -56,10 +58,13 @@
 public class FuelSales {
     public static void main(String[] args) {
 
+    Scanner scanner = new Scanner(System.in);
+    double total_sales = scanner.nextDouble();
+
 // we have taken the case of 2 pumps here. 
         Variables pump1 =new Variables();
         Variables pump2 =new Variables();
 
-
+        System.out.println(total_sales);
     }
 }
