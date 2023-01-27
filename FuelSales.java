@@ -19,13 +19,27 @@
         double opening_pms;
         double closing_pms;
         int rate_pms;
-        double sales_pms;
+
+        // these are litres rea from the pump
+        double day_sales_pms;
+        double night_sales_pms;
+
+        //these are litres read from the tanks
+        double morning_dips_pms;
+        double evening_dips_pms;
         
         //DIESEL
         double opening_ago;
         double closing_ago;
         int rate_ago;
-        double sales_ago;
+
+        //these are litres read from the pump
+        double day_sales_ago;
+        double night_sales_ago;
+
+        // these are litres read from the tanks
+        double morning_dips_ago;
+        double evening_dips_ago;
 
         //SHIFTS (WE NORMALLY HAVE TWO)
         char day;
@@ -46,6 +60,6 @@ public class FuelSales {
         Variables pump1 =new Variables();
         Variables pump2 =new Variables();
 
-        
+
     }
 }
