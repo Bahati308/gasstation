@@ -21,6 +21,7 @@
         double opening_pms;
         double closing_pms;
         int rate_pms;
+        double pms_litres;
 
         // these are litres rea from the pump
         double day_sales_pms;
@@ -52,7 +53,15 @@
 
         // day and night sales
         double total_sales;
+    }
 
+ //constructors
+
+ //pms litres
+
+ double PmsLitres (){
+    pms_litres = closing_pms - opening_pms;
+    return pms_litres;
  }
 
 public class FuelSales {
