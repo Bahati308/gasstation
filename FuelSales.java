@@ -111,15 +111,6 @@
 
 public class FuelSales {
     public void main(String[] args) {
-
-    Scanner scanner = new Scanner(System.in);
-    double total_sales = scanner.nextDouble();
-
-// we have taken the case of 2 pumps here. 
-        Variables pump1 =new Variables();
-        Variables pump2 =new Variables();
-
-        System.out.println(total_sales);
     }
 }
 }
