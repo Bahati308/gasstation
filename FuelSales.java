@@ -9,7 +9,7 @@
  // the variables we shall be using 
  //through out the program
 
- import java.util.*;
+ 
  class Variables {
         // products
         char pms; // petrol
@@ -18,9 +18,9 @@
         // opening and closing meters of the products
 
         //PETROL
-        double opening_pms;
-        double closing_pms;
-        int rate_pms;
+        double opening_pms=2;
+        double closing_pms=10;
+        int rate_pms=5099;
         double pms_litres;
         double pms_sales;
 
@@ -37,9 +37,9 @@
         double evening_dips_pms;
         
         //DIESEL
-        double opening_ago;
-        double closing_ago;
-        int rate_ago;
+        double opening_ago=1;
+        double closing_ago=5;
+        int rate_ago=5339;
         double ago_litres;
         double ago_sales;
 
@@ -108,9 +108,10 @@
  }
 
  
-
+ }
 public class FuelSales {
-    public void main(String[] args) {
+    public static void main(String[] args) {
+      
+      System.out.println("ago litres :"+ AgoLitres());
     }
-}
 }
