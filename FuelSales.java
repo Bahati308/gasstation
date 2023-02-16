@@ -105,6 +105,28 @@ class Variables {
       //these are litres read from the tanks
        morning_dips_pms =0;
        evening_dips_pms =0;
+
+       //diesel
+
+   day_opening_ago=0;
+   day_closing_ago=10;
+   night_opening_ago=0;
+   night_closing_ago=0;
+    rate_ago=5339;
+   ago_litres=0;
+    ago_sales=0;
+
+   // litres read from the pump
+    day_ago_litres=0;
+    night_ago_litres=0;
+
+   // these are sales
+   day_sales_ago=0;
+   night_sales_ago=0;
+
+   // these are litres read from the tanks
+   morning_dips_ago=0;
+    evening_dips_ago=0;
    }
 
    // methods are listed below
