@@ -18,8 +18,10 @@
         // opening and closing meters of the products
 
         //PETROL
-        double opening_pms=2;
-        double closing_pms=10;
+        double day_opening_pms;
+        double day_closing_pms;
+        double night_opening_pms;
+        double night_closing_pms;
         int rate_pms=5099;
         double pms_litres;
         double pms_sales;
@@ -37,8 +39,10 @@
         double evening_dips_pms;
         
         //DIESEL
-        double opening_ago=1;
-        double closing_ago=5;
+        double day_opening_ago;
+        double day_closing_ago;
+        double night_opening_ago;
+        double night_closing_ago;
         int rate_ago=5339;
         double ago_litres;
         double ago_sales;
@@ -71,16 +75,23 @@
 
  //pms litres
 
- double PmsLitres (){
-    pms_litres = closing_pms - opening_pms;
-    return pms_litres;
+ double dayPmsLitres (){
+    return day_closing_pms - day_opening_pms;
+   
  }
+
+
+ double nightPmsLitres (){
+   return night_closing_pms - night_opening_pms;
+  
+}
+
 
  //pms sales
 
  double DaypmsSales(){
-    day_sales_pms=rate_pms*day_pms_litres;
-    return day_sales_pms;
+    return rate_pms*day_pms_litres;
+    
  }
 
  double NightpmsSales(){
@@ -90,21 +101,27 @@
 
  // ago litres
 
- double AgoLitres (){
-        ago_litres = closing_ago-opening_ago;
-        return ago_litres;
+ double dayAgoLitres (){
+        return day_closing_ago-day_opening_ago;
+
  }
+
+
+ double nightAgoLitres (){
+   return night_closing_ago-night_opening_ago;
+
+}
 
  //pms sales
 
  double DayagoSales(){
-    day_sales_ago=rate_ago*day_ago_litres;
-    return day_sales_ago;
+   return rate_ago*day_ago_litres;
+   
  }
 
  double NightagoSales(){
-    night_sales_ago=rate_ago*night_ago_litres;
-    return night_sales_ago;
+    return rate_ago*night_ago_litres;
+
  }
 
  
@@ -112,6 +129,6 @@
 public class FuelSales {
     public static void main(String[] args) {
       
-      System.out.println("ago litres :"+ AgoLitres());
+      System.out.println("ago litres :");
     }
 }
