@@ -4,9 +4,24 @@
  * easy management of a fuel station
  */
 
+
+
+ class FuelSales {
+   public static void main(String[] args) {
+      Variables dA = new Variables();
+      double dayAgol;
+      dayAgol = dA.dayAgoLitres();
+      System.out.println("day shift ago litres :"+dayAgol);
+   }
+}
+
+
+
 // this class handles all
 // the variables we shall be using 
 //through out the program
+
+
 
 class Variables {
    // products
@@ -141,13 +156,4 @@ class Variables {
 
    }
 
-}
-
-class FuelSales {
-   public static void main(String[] args) {
-      Variables dA = new Variables();
-      double dayAgol;
-      dayAgol = dA.dayAgoLitres();
-      System.out.println("day shift ago litres :"+dayAgol);
-   }
 }
