@@ -11,7 +11,7 @@
       Variables dA = new Variables();
       double dayAgol;
       dayAgol = dA.dayAgoLitres();
-      System.out.println("day shift ago litres :"+dayAgol);
+      System.out.println("day shift ago litres: "+dayAgol);
    }
 }
 
@@ -108,11 +108,11 @@ class Variables {
 
        //diesel
 
-   day_opening_ago=0;
-   day_closing_ago=10;
+   day_opening_ago=0.0;
+   day_closing_ago=10.0;
    night_opening_ago=0;
    night_closing_ago=0;
-    rate_ago=5339;
+    rate_ago=5339.0;
    ago_litres=0;
     ago_sales=0;
 
@@ -157,7 +157,7 @@ class Variables {
    // ago litres
 
    double dayAgoLitres() {
-      return day_closing_ago - day_opening_ago;
+      return day_closing_ago-day_opening_ago;
 
    }
 
