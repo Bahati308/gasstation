@@ -143,7 +143,7 @@ class Variables {
 
 }
 
-public class FuelSales {
+class FuelSales {
    public static void main(String[] args) {
       Variables dA = new Variables();
       double dayAgol;
