@@ -146,6 +146,8 @@ class Variables {
 public class FuelSales {
    public static void main(String[] args) {
       Variables dA = new Variables();
-      System.out.println("day shift ago litres :");
+      double dayAgol;
+      dayAgol = dA.dayAgoLitres();
+      System.out.println("day shift ago litres :"+dayAgol);
    }
 }
