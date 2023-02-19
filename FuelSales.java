@@ -157,7 +157,8 @@ class Variables {
    // ago litres
 
    double dayAgoLitres() {
-      return day_closing_ago-day_opening_ago;
+      day_ago_litres= day_closing_ago-day_opening_ago;
+      return day_ago_litres;
 
    }
 
