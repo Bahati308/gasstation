@@ -1,3 +1,4 @@
+
 /*Jan 27, 2023
  * developed by Bahati308
  * This program is aimed at 
@@ -11,6 +12,7 @@
       Variables nA = new Variables();
       Variables dAS =new Variables();
       Variables nAs= new Variables();
+      Variables tAS = new Variables();
 
       double dayAgol;
       dayAgol = dA.dayAgoLitres();// day shift ago litres
@@ -24,6 +26,13 @@
       nightAgol = nA.nightAgoLitres();
       System.out.println("night shift ago litres: "+nightAgol);
 
+      double nightAgoS;
+      nightAgoS= nAs.NightagoSales();
+      System.out.println("night shift ago sales: "+ nightAgoS);
+
+      double totAgoSales;
+      totAgoSales = tAS.TotalAgoSAles();
+      System.out.println("the total ago sales: "+totAgoSales);
 
    }
 }
@@ -72,6 +81,7 @@ class Variables {
    double rate_ago;
    double ago_litres;
    double ago_sales;
+   double total_ago_sales;
 
    // litres read from the pump
    double day_ago_litres;
@@ -136,6 +146,7 @@ class Variables {
    // these are sales
    day_sales_ago=0;
    night_sales_ago=0;
+   
 
    // these are litres read from the tanks
    morning_dips_ago=0;
@@ -184,13 +195,20 @@ class Variables {
    // pms sales
 
    double DayagoSales() {
-      return rate_ago * day_ago_litres;
+      day_sales_ago =rate_ago * (day_closing_ago-day_opening_ago);
+      return day_sales_ago;
 
    }
 
    double NightagoSales() {
-      return rate_ago * night_ago_litres;
+      night_sales_ago= rate_ago * (night_closing_ago-night_opening_ago);
+            return night_sales_ago;
 
+   }
+
+   double TotalAgoSAles(){
+      total_ago_sales = ((rate_ago * (night_closing_ago-night_opening_ago))+(rate_ago * (day_closing_ago-day_opening_ago)));
+      return total_ago_sales;
    }
 
 }
