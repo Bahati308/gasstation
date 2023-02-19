@@ -8,9 +8,14 @@
  class FuelSales {
    public static void main(String[] args) {
       Variables dA = new Variables();
+      Variables nA = new Variables();
       double dayAgol;
-      dayAgol = dA.dayAgoLitres();
+      dayAgol = dA.dayAgoLitres();// day shift ago litres
       System.out.println("day shift ago litres: "+dayAgol);
+
+      double nightAgol;
+      nightAgol = nA.nightAgoLitres();
+      System.out.println("night shift ago litres: "+nightAgol);
    }
 }
 
@@ -162,7 +167,8 @@ class Variables {
    }
 
    double nightAgoLitres() {
-      return night_closing_ago - night_opening_ago;
+      night_ago_litres= day_closing_ago - night_opening_ago;
+      return night_ago_litres;
 
    }
 
