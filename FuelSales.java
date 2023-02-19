@@ -5,7 +5,6 @@
  */
 
 
-
  class FuelSales {
    public static void main(String[] args) {
       Variables dA = new Variables();
@@ -180,3 +179,5 @@ class Variables {
    }
 
 }
+
+
