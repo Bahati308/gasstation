@@ -9,13 +9,22 @@
    public static void main(String[] args) {
       Variables dA = new Variables();
       Variables nA = new Variables();
+      Variables dAS =new Variables();
+      Variables nAs= new Variables();
+
       double dayAgol;
       dayAgol = dA.dayAgoLitres();// day shift ago litres
       System.out.println("day shift ago litres: "+dayAgol);
 
+      double dayAgoS;
+      dayAgoS = dAS.DayagoSales();
+      System.out.println("day shift ago sales: "+dayAgoS);
+
       double nightAgol;
       nightAgol = nA.nightAgoLitres();
       System.out.println("night shift ago litres: "+nightAgol);
+
+
    }
 }
 
@@ -114,8 +123,8 @@ class Variables {
 
    day_opening_ago=0.0;
    day_closing_ago=10.0;
-   night_opening_ago=0;
-   night_closing_ago=0;
+   night_opening_ago=10.0;
+   night_closing_ago=50.0;
     rate_ago=5339.0;
    ago_litres=0;
     ago_sales=0;
@@ -167,7 +176,7 @@ class Variables {
    }
 
    double nightAgoLitres() {
-      night_ago_litres= day_closing_ago - night_opening_ago;
+      night_ago_litres= night_closing_ago - night_opening_ago;
       return night_ago_litres;
 
    }
