@@ -14,6 +14,13 @@
       Variables nAs= new Variables();
       Variables tAS = new Variables();
 
+
+      Variables dP = new Variables();
+      Variables nP = new Variables();
+      Variables dPS =new Variables();
+      Variables nPs= new Variables();
+      Variables tPS = new Variables();
+
       double dayAgol;
       dayAgol = dA.dayAgoLitres();// day shift ago litres
       System.out.println("day shift ago litres: "+dayAgol);
