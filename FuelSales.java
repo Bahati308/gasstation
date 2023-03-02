@@ -23,6 +23,8 @@
 
       Variables tDs = new Variables();
       Variables tNs = new Variables();
+
+      Variables gT = new Variables();
       
       double tDSales;
       tDSales =tDs.TotalDaySales();
@@ -32,7 +34,9 @@
       tNSales = tNs.TotalNightSales();
       System.out.println("Total night sales: "+tNSales);
 
-      
+      double grandTotal;
+      grandTotal = gT.GrandSales();
+      System.out.println("Grand total sales"+grandTotal);
 
       double dayPmsl;
       dayPmsl = dP.dayPmsLitres();// day shift ago litres
