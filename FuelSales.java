@@ -38,7 +38,7 @@
       System.out.println("night shift pms sales: "+ nightPmsS);
 
       double totPmsSales;
-      totPmsSales = tPS.TotalAgoSAles();
+      totPmsSales = tPS.TotalPmsSAles();
       System.out.println("the total pms sales: "+totPmsSales);
 
 
@@ -237,6 +237,12 @@ class Variables {
    double TotalAgoSAles(){
       total_ago_sales = ((rate_ago * (night_closing_ago-night_opening_ago))+(rate_ago * (day_closing_ago-day_opening_ago)));
       return total_ago_sales;
+   }
+
+
+   double TotalPmsSAles(){
+      total_pms_sales = ((rate_pms * (night_closing_pms-night_opening_pms))+(rate_pms * (day_closing_pms-day_opening_pms)));
+      return total_pms_sales;
    }
 
 }
