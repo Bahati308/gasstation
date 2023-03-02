@@ -132,6 +132,7 @@ class Variables {
 
    // day and night sales
    double total_sales;
+   private double total_pms_sales;
 
    // constructor
 
