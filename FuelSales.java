@@ -80,7 +80,7 @@
 
       double grandTotal;
       grandTotal = gT.GrandSales();
-      System.out.println("Grand total sales"+grandTotal);
+      System.out.println("Grand total sales: "+grandTotal);
    }
 }
 
