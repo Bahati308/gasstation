@@ -133,6 +133,7 @@ class Variables {
    // day and night sales
    double total_sales;
    double total_pms_sales;
+   double grand_sales;
 
    // constructor
 
@@ -258,6 +259,14 @@ class Variables {
    double TotalNightSales(){
       night_sales=((rate_ago* (night_closing_ago-night_opening_ago))+(rate_pms * (night_closing_pms - night_opening_pms)));
       return night_sales;
+   }
+
+   double GrandSales(){
+      grand_sales=(((rate_ago* (night_closing_ago-night_opening_ago))+
+      (rate_pms * (night_closing_pms - night_opening_pms)))+((rate_ago * (day_closing_ago-day_opening_ago))+
+      (rate_pms * (day_closing_pms - day_opening_pms))));
+      
+      return grand_sales;
    }
 
 }
