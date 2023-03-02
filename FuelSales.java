@@ -186,12 +186,15 @@ class Variables {
    // pms litres
 
    double dayPmsLitres() {
-      return day_closing_pms - day_opening_pms;
+
+      day_pms_litres= (day_closing_pms - day_opening_pms);
+      return day_pms_litres;
 
    }
 
    double nightPmsLitres() {
-      return night_closing_pms - night_opening_pms;
+     night_pms_litres =(night_closing_pms - night_opening_pms);
+     return night_pms_litres;
 
    }
 
@@ -199,13 +202,13 @@ class Variables {
 
    double DayPmsSales() {
       
-      day_sales_pms=rate_pms * day_pms_litres;
+      day_sales_pms=(rate_pms * day_pms_litres);
       return day_sales_pms;
 
    }
 
    double NightPmsSales() {
-      night_sales_pms = rate_pms * night_pms_litres;
+      night_sales_pms = (rate_pms * night_pms_litres);
       return night_sales_pms;
    }
 
