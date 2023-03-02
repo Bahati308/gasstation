@@ -26,17 +26,6 @@
 
       Variables gT = new Variables();
       
-      double tDSales;
-      tDSales =tDs.TotalDaySales();
-      System.out.println("Total day Sales: "+tDSales);
-
-      double tNSales;
-      tNSales = tNs.TotalNightSales();
-      System.out.println("Total night sales: "+tNSales);
-
-      double grandTotal;
-      grandTotal = gT.GrandSales();
-      System.out.println("Grand total sales"+grandTotal);
 
       double dayPmsl;
       dayPmsl = dP.dayPmsLitres();// day shift ago litres
@@ -79,6 +68,19 @@
       double totAgoSales;
       totAgoSales = tAS.TotalAgoSAles();
        System.out.println("the total ago sales: "+totAgoSales);
+
+
+      double tDSales;
+      tDSales =tDs.TotalDaySales();
+      System.out.println("Total day Sales: "+tDSales);
+
+      double tNSales;
+      tNSales = tNs.TotalNightSales();
+      System.out.println("Total night sales: "+tNSales);
+
+      double grandTotal;
+      grandTotal = gT.GrandSales();
+      System.out.println("Grand total sales"+grandTotal);
    }
 }
 
