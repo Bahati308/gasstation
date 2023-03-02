@@ -35,11 +35,11 @@
 
       double nightPmsS;
       nightPmsS= nPs.NightagoSales();
-      System.out.println("night shift ago sales: "+ nightPmsS);
+      System.out.println("night shift pms sales: "+ nightPmsS);
 
       double totPmsSales;
-      totPmsSales = tAS.TotalAgoSAles();
-      System.out.println("the total ago sales: "+totPmsSales);
+      totPmsSales = tPS.TotalAgoSAles();
+      System.out.println("the total pms sales: "+totPmsSales);
 
 
 
@@ -239,5 +239,3 @@ class Variables {
    }
 
 }
-
-
