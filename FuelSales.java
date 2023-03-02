@@ -43,17 +43,17 @@
 
 
 
-      double dayPmsl;
-      dayPmsl = dP.dayAgoLitres();// day shift ago litres
-      System.out.println("day shift pms litres: "+dayPmsl);
+      double dayAgol;
+      dayAgol = dA.dayAgoLitres();// day shift ago litres
+      System.out.println("day shift ago litres: "+dayAgol);
 
-      double dayPmsS;
-      dayPmsS = dPS.DayagoSales();
-      System.out.println("day shift pms sales: "+dayPmsS);
+      double dayAgoS;
+      dayAgoS = dAS.DayagoSales();
+      System.out.println("day shift ago sales: "+dayAgoS);
 
-      double nightPmsl;
-      nightPmsl = nP.nightAgoLitres();
-      System.out.println("night shift ago litres: "+nightPmsl);
+      double nightAgol;
+      nightAgol = nA.nightAgoLitres();
+      System.out.println("night shift ago litres: "+nightAgol);
 
       double nightPmsS;
       nightPmsS= nPs.NightagoSales();
