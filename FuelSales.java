@@ -21,6 +21,19 @@
       Variables nPs= new Variables();
       Variables tPS = new Variables();
 
+      Variables tDs = new Variables();
+      Variables tNs = new Variables();
+      
+      double tDSales;
+      tDSales =tDs.TotalDaySales();
+      System.out.println("Total day Sales: "+tDSales);
+
+      double tNSales;
+      tNSales = tNs.TotalNightSales();
+      System.out.println("Total night sales: "+tNSales);
+
+      
+
       double dayPmsl;
       dayPmsl = dP.dayPmsLitres();// day shift ago litres
       System.out.println("day shift pms litres: "+dayPmsl);
