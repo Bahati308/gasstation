@@ -250,5 +250,14 @@ class Variables {
       total_pms_sales = ((rate_pms * (night_closing_pms-night_opening_pms))+(rate_pms * (day_closing_pms-day_opening_pms)));
       return total_pms_sales;
    }
+   double TotalDaySales(){
+      day_sales=((rate_ago * (day_closing_ago-day_opening_ago))+(rate_pms * (day_closing_pms - day_opening_pms)));
+      return day_sales;
+   }
+
+   double TotalNightSales(){
+      night_sales=((rate_ago* (night_closing_ago-night_opening_ago))+(rate_pms * (night_closing_pms - night_opening_pms)));
+      return night_sales;
+   }
 
 }
