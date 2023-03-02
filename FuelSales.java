@@ -132,7 +132,7 @@ class Variables {
 
    // day and night sales
    double total_sales;
-   private double total_pms_sales;
+   double total_pms_sales;
 
    // constructor
 
@@ -151,8 +151,8 @@ class Variables {
        night_pms_litres=0;
 
       // these are sales made 
-      day_sales_pms=0;
-      night_sales_pms=0;
+    day_sales_pms=0;
+   night_sales_pms=0;
 
       //these are litres read from the tanks
        morning_dips_pms =0;
@@ -202,13 +202,13 @@ class Variables {
 
    double DayPmsSales() {
       
-      day_sales_pms=(rate_pms * day_pms_litres);
+      day_sales_pms=(rate_pms * (day_closing_pms - day_opening_pms));
       return day_sales_pms;
 
    }
 
    double NightPmsSales() {
-      night_sales_pms = (rate_pms * night_pms_litres);
+      night_sales_pms = (rate_pms * (night_closing_pms - night_opening_pms));
       return night_sales_pms;
    }
 
