@@ -34,7 +34,7 @@
       System.out.println("night shift pms litres: "+nightPmsl);
 
       double nightPmsS;
-      nightPmsS= nPs.NightpmsSales();
+      nightPmsS= nPs.NightPmsSales();
       System.out.println("night shift pms sales: "+ nightPmsS);
 
       double totPmsSales;
