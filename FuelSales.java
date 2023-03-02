@@ -22,19 +22,19 @@
       Variables tPS = new Variables();
 
       double dayPmsl;
-      dayPmsl = dP.dayAgoLitres();// day shift ago litres
-      System.out.println("day shift ago litres: "+dayPmsl);
+      dayPmsl = dP.dayPmsLitres();// day shift ago litres
+      System.out.println("day shift pms litres: "+dayPmsl);
 
       double dayPmsS;
-      dayPmsS = dPS.DayagoSales();
-      System.out.println("day shift ago sales: "+dayPmsS);
+      dayPmsS = dPS.DayPmsSales();
+      System.out.println("day shift pms sales: "+dayPmsS);
 
       double nightPmsl;
-      nightPmsl = nP.nightAgoLitres();
-      System.out.println("night shift ago litres: "+nightPmsl);
+      nightPmsl = nP.nightPmsLitres();
+      System.out.println("night shift pms litres: "+nightPmsl);
 
       double nightPmsS;
-      nightPmsS= nPs.NightagoSales();
+      nightPmsS= nPs.NightpmsSales();
       System.out.println("night shift pms sales: "+ nightPmsS);
 
       double totPmsSales;
@@ -197,12 +197,14 @@ class Variables {
 
    // pms sales
 
-   double DaypmsSales() {
-      return rate_pms * day_pms_litres;
+   double DayPmsSales() {
+      
+      day_sales_pms=rate_pms * day_pms_litres;
+      return day_sales_pms;
 
    }
 
-   double NightpmsSales() {
+   double NightPmsSales() {
       night_sales_pms = rate_pms * night_pms_litres;
       return night_sales_pms;
    }
