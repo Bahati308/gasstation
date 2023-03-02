@@ -56,11 +56,12 @@
       System.out.println("night shift ago litres: "+nightAgol);
 
       double nightAgoS;
-      nightAgoS= nPs.NightagoSales();
+      nightAgoS= nAs.NightagoSales();
       System.out.println("night shift ago sales: "+ nightAgoS);
 
       double totAgoSales;
-      System.out.println("the total ago sales: "+totAgoSales);
+      totAgoSales = tAS.TotalAgoSAles();
+       System.out.println("the total ago sales: "+totAgoSales);
    }
 }
 
