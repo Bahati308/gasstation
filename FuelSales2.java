@@ -18,16 +18,24 @@ System.out.println("ago morning dips : "+ morning_dips_ago);
         double evening_dips_ago =scan.nextDouble();
         System.out.println("ago evening dips : "+evening_dips_ago);
 
-        System.out.println("day opening pms :");
+        System.out.print("day opening pms :");
         double day_opening_pms = scan.nextDouble();
         System.out.println("Day opening PMS :" + day_opening_pms);
 
-        System.out.println("day opening pms :");
+        System.out.print("day closing pms :");
         double day_closing_pms = scan.nextDouble();
         System.out.println("Day closing PMS :" + day_closing_pms);
 
+        System.out.print("PMS RATE : ");
+        double rate_pms = scan.nextDouble();
+        System.out.println("PMS RATE: "+ rate_pms);
+
         double day_pms_litres =day_closing_pms-day_opening_pms;
         System.out.println("Day Shift PMS Litres : "+day_pms_litres);
+
+
+        double day_sales_pms = day_pms_litres*rate_pms;
+        System.out.println("Day sales PMS : "+day_sales_pms);
     }
 
     Variables dA = new Variables();
