@@ -13,6 +13,15 @@ import java.util.*;
         System.out.print("Morning dips ago: ");
         double morning_dips_ago = scan.nextDouble();
 System.out.println("ago morning dips : "+ morning_dips_ago);
+
+        System.out.print("Evening dips ago: ");
+        double evening_dips_ago =scan.nextDouble();
+        System.out.println("ago evening dips : "+evening_dips_ago);
+
+        System.out.println("day opening pms :");
+        double day_opening_pms = scan.nextDouble();
+        System.out.println("Evening AGO dips :" + day_opening_pms);
+
     }
 
     Variables dA = new Variables();
@@ -163,8 +172,6 @@ System.out.println("ago morning dips : "+ morning_dips_ago);
     // constructor
  
     Variables() {
- 
-        day_opening_pms=1;
         day_closing_pms=5;
         night_opening_pms=5;
         night_closing_pms=10;
@@ -201,7 +208,7 @@ System.out.println("ago morning dips : "+ morning_dips_ago);
     // these are sales
     day_sales_ago=0;
     night_sales_ago=0;
-     evening_dips_ago=0;
+    
     }
  
     // methods are listed below
