@@ -61,6 +61,12 @@ System.out.println("pms morning dips : "+ morning_dips_pms);
 
         double night_sales_pms = day_pms_litres*rate_pms;
         System.out.println("Day sales PMS : "+night_sales_pms);
+
+        double pms_litres = night_pms_litres+day_pms_litres;
+        System.out.println("Total PMS Litres :" +pms_litres);
+
+        double total_pms_sales= night_sales_pms+day_sales_pms;
+        System.out.println("Total PMS Sales: "+ total_pms_sales);
     }
    }
  }
@@ -199,12 +205,7 @@ System.out.println("pms morning dips : "+ morning_dips_pms);
        total_ago_sales = ((rate_ago * (night_closing_ago-night_opening_ago))+(rate_ago * (day_closing_ago-day_opening_ago)));
        return total_ago_sales;
     }
- 
- 
-    double TotalPmsSAles(){
-       total_pms_sales = ((rate_pms * (night_closing_pms-night_opening_pms))+(rate_pms * (day_closing_pms-day_opening_pms)));
-       return total_pms_sales;
-    }
+    
     double TotalDaySales(){
        day_sales=((rate_ago * (day_closing_ago-day_opening_ago))+(rate_pms * (day_closing_pms - day_opening_pms)));
        return day_sales;
