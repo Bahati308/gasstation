@@ -1,14 +1,14 @@
-
-
-/*Jan 27, 2023
+/*modified on 
+Mar 04, 2023
  * developed by Bahati308
  * This program is aimed at 
  * easy management of a fuel station
  */
 
-
+import java.util.*;
  class FuelSales {
     public static void main(String[] args) {
+        System.out.println(System.in);
        Variables dA = new Variables();
        Variables nA = new Variables();
        Variables dAS =new Variables();
