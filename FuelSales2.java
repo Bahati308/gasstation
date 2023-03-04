@@ -25,6 +25,9 @@ System.out.println("ago morning dips : "+ morning_dips_ago);
         System.out.println("day opening pms :");
         double day_closing_pms = scan.nextDouble();
         System.out.println("Day closing PMS :" + day_closing_pms);
+
+        double day_pms_litres =day_closing_pms-day_opening_pms;
+        System.out.println("Day Shift PMS Litres : "+day_pms_litres);
     }
 
     Variables dA = new Variables();
@@ -182,7 +185,7 @@ System.out.println("ago morning dips : "+ morning_dips_ago);
        pms_sales=0;
  
        //litres read from the pump
-       day_pms_litres=0;
+       
         night_pms_litres=0;
  
        // these are sales made 
