@@ -8,7 +8,7 @@ Mar 04, 2023
 import java.util.*;
  class FuelSales {
     public static void main(String[] args) {
-        System.out.println(System.in);
+    Scanner scanner = new Scanner (System.in);
        Variables dA = new Variables();
        Variables nA = new Variables();
        Variables dAS =new Variables();
@@ -90,7 +90,6 @@ import java.util.*;
  // this class handles all
  // the variables we shall be using 
  //through out the program
- 
  
  
  class Variables {
@@ -199,7 +198,9 @@ import java.util.*;
     
  
     // these are litres read from the tanks
-    morning_dips_ago=0;
+    System.out.print("Morning dips ago: ");
+    double morning_dips_ago = scanner.nextInt();
+
      evening_dips_ago=0;
     }
  
