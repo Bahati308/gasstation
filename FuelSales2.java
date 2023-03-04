@@ -8,8 +8,14 @@ Mar 04, 2023
 import java.util.*;
  class FuelSales {
     public static void main(String[] args) {
-    Scanner scanner = new Scanner (System.in);
-       Variables dA = new Variables();
+    try (Scanner scan = new Scanner (System.in)) {
+        // these are litres read from the tanks
+        System.out.print("Morning dips ago: ");
+        double morning_dips_ago = scan.nextDouble();
+System.out.println("ago morning dips : "+ morning_dips_ago);
+    }
+
+    Variables dA = new Variables();
        Variables nA = new Variables();
        Variables dAS =new Variables();
        Variables nAs= new Variables();
@@ -195,12 +201,6 @@ import java.util.*;
     // these are sales
     day_sales_ago=0;
     night_sales_ago=0;
-    
- 
-    // these are litres read from the tanks
-    System.out.print("Morning dips ago: ");
-    double morning_dips_ago = scanner.nextInt();
-
      evening_dips_ago=0;
     }
  
