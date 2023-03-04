@@ -137,23 +137,6 @@ System.out.println("pms morning dips : "+ morning_dips_pms);
     // constructor
  
     Variables() {
-        night_opening_pms=5;
-        night_closing_pms=10;
-        rate_pms=5099;
-       pms_litres=0;
-       pms_sales=0;
- 
-       //litres read from the pump
-       
-        night_pms_litres=0;
- 
-       // these are sales made 
-     day_sales_pms=0;
-    night_sales_pms=0;
- 
-       //these are litres read from the tanks
-        morning_dips_pms =0;
-        evening_dips_pms =0;
  
         //diesel
  
