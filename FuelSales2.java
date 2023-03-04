@@ -20,13 +20,11 @@ System.out.println("ago morning dips : "+ morning_dips_ago);
 
         System.out.println("day opening pms :");
         double day_opening_pms = scan.nextDouble();
-        System.out.println("Evening AGO dips :" + day_opening_pms);
-
-
+        System.out.println("Day opening PMS :" + day_opening_pms);
 
         System.out.println("day opening pms :");
         double day_closing_pms = scan.nextDouble();
-        System.out.println("Evening AGO dips :" + day_closing_pms);
+        System.out.println("Day closing PMS :" + day_closing_pms);
     }
 
     Variables dA = new Variables();
