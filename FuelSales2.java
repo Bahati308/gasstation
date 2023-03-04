@@ -22,6 +22,11 @@ System.out.println("ago morning dips : "+ morning_dips_ago);
         double day_opening_pms = scan.nextDouble();
         System.out.println("Evening AGO dips :" + day_opening_pms);
 
+
+
+        System.out.println("day opening pms :");
+        double day_closing_pms = scan.nextDouble();
+        System.out.println("Evening AGO dips :" + day_closing_pms);
     }
 
     Variables dA = new Variables();
@@ -172,7 +177,6 @@ System.out.println("ago morning dips : "+ morning_dips_ago);
     // constructor
  
     Variables() {
-        day_closing_pms=5;
         night_opening_pms=5;
         night_closing_pms=10;
         rate_pms=5099;
