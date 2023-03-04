@@ -153,13 +153,6 @@ System.out.println("ago morning dips : "+ morning_dips_ago);
     // methods are listed below
     // pms litres
  
-    double dayPmsLitres() {
- 
-       day_pms_litres= (day_closing_pms - day_opening_pms);
-       return day_pms_litres;
- 
-    }
- 
     double nightPmsLitres() {
       night_pms_litres =(night_closing_pms - night_opening_pms);
       return night_pms_litres;
