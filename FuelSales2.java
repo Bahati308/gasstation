@@ -36,6 +36,31 @@ System.out.println("ago morning dips : "+ morning_dips_ago);
 
         double day_sales_pms = day_pms_litres*rate_pms;
         System.out.println("Day sales PMS : "+day_sales_pms);
+
+
+
+        System.out.print("Morning dips pms: ");
+        double morning_dips_pms = scan.nextDouble();
+System.out.println("pms morning dips : "+ morning_dips_pms);
+
+        System.out.print("Morning dips ago: ");
+        double evening_dips_pms =scan.nextDouble();
+        System.out.println("pms evening dips : "+evening_dips_pms);
+
+        System.out.print("night opening pms :");
+        double night_opening_pms = scan.nextDouble();
+        System.out.println("night opening PMS :" + night_opening_pms);
+
+        System.out.print("night closing pms :");
+        double night_closing_pms = scan.nextDouble();
+        System.out.println("night closing PMS :" + night_closing_pms);
+
+        double night_pms_litres =night_closing_pms-night_opening_pms;
+        System.out.println("Night Shift PMS Litres : "+night_pms_litres);
+
+
+        double night_sales_pms = day_pms_litres*rate_pms;
+        System.out.println("Day sales PMS : "+night_sales_pms);
     }
    }
  }
@@ -157,20 +182,6 @@ System.out.println("ago morning dips : "+ morning_dips_ago);
       night_pms_litres =(night_closing_pms - night_opening_pms);
       return night_pms_litres;
  
-    }
- 
-    // pms sales
- 
-    double DayPmsSales() {
-       
-       day_sales_pms=(rate_pms * (day_closing_pms - day_opening_pms));
-       return day_sales_pms;
- 
-    }
- 
-    double NightPmsSales() {
-       night_sales_pms = (rate_pms * (night_closing_pms - night_opening_pms));
-       return night_sales_pms;
     }
  
     // ago litres
