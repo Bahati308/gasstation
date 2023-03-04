@@ -24,7 +24,6 @@ System.out.println("pms morning dips : "+ morning_dips_pms);
 
         System.out.print("PMS RATE : ");
         double rate_pms = scan.nextDouble();
-        System.out.println("PMS RATE: "+ rate_pms);
 
         double day_pms_litres =day_closing_pms-day_opening_pms;
         System.out.println("Day Shift PMS Litres : "+day_pms_litres);
@@ -33,7 +32,7 @@ System.out.println("pms morning dips : "+ morning_dips_pms);
         double day_sales_pms = day_pms_litres*rate_pms;
         System.out.println("Day sales PMS : "+day_sales_pms);
 
-        System.out.print("Morning dips ago: ");
+        System.out.print("Evening dips PMS: ");
         double evening_dips_pms =scan.nextDouble();
         System.out.println("pms evening dips : "+evening_dips_pms);
 
@@ -74,8 +73,6 @@ System.out.println("ago morning dips : "+ morning_dips_ago);
 
         System.out.print("AGO RATE : ");
         double rate_ago = scan.nextDouble();
-        System.out.println("AGO RATE: "+ rate_ago);
-
         double day_ago_litres =day_closing_ago-day_opening_ago;
         System.out.println("Day Shift AGO Litres : "+day_ago_litres);
 
@@ -84,7 +81,7 @@ System.out.println("ago morning dips : "+ morning_dips_ago);
         System.out.println("Day sales AGO : "+day_sales_ago);
         
 
-        System.out.print("Morning dips pms: ");
+        System.out.print("Evening dips AGO: ");
         double evening_dips_ago =scan.nextDouble();
         System.out.println("ago evening dips : "+evening_dips_ago);
 
@@ -110,83 +107,4 @@ System.out.println("ago morning dips : "+ morning_dips_ago);
         System.out.println("Total AGO Sales: "+ total_ago_sales);
     }
    }
- }
- 
- 
- 
- // this class handles all
- // the variables we shall be using 
- //through out the program
- 
- 
- class Variables {
-    // products
-    char pms; // petrol
-    char ago; // diesel
- 
-    // opening and closing meters of the products
- 
- 
-    // litres read from the pump
-    double day_pms_litres;
-    double night_pms_litres;
- 
-    // these are sales made
-    double day_sales_pms;
-    double night_sales_pms;
- 
-    // these are litres read from the tanks
-    double morning_dips_pms;
-    double evening_dips_pms;
- 
-    // DIESEL
-    double day_opening_ago;
-    double day_closing_ago;
-    double night_opening_ago;
-    double night_closing_ago;
-    double rate_ago;
-    double ago_litres;
-    double ago_sales;
-    double total_ago_sales;
- 
-    // litres read from the pump
-    double day_ago_litres;
-    double night_ago_litres;
- 
-    // these are sales
-    double day_sales_ago;
-    double night_sales_ago;
- 
-    // these are litres read from the tanks
-    
-    double day_sales;
-    double night_sales;
- 
-    // day and night sales
-    double total_sales;
-    double grand_sales;
- 
-    // constructor
- 
-    Variables() {
- 
-        //diesel
- 
-    day_opening_ago=0.0;
-    day_closing_ago=10.0;
-    night_opening_ago=10.0;
-    night_closing_ago=50.0;
-     rate_ago=5339.0;
-    ago_litres=0;
-     ago_sales=0;
- 
-    // litres read from the pump
-     day_ago_litres=0;
-     night_ago_litres=0;
- 
-    // these are sales
-    day_sales_ago=0;
-    night_sales_ago=0;
-    
-    }
  }
