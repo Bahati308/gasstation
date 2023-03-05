@@ -34,18 +34,18 @@ import java.util.*;
 
         System.out.println("night opening PMS :" + day_closing_pms);
 
-
-        if (morning_dips_pms==day_pms_litres) {
+        double pms_morning_diff = morning_dips_pms-day_pms_litres; 
+        if (pms_morning_diff==0) {
                 System.out.println("woow, we balance");
         }
 
-         else if (morning_dips_pms<day_pms_litres) {
-                System.out.println("Sorry, we have a shortage");
+         else if (pms_morning_diff>0) {
+                System.out.println("woow, we have excess");
                 
         }
         
                  else {
-                        System.out.println("we have excess");
+                        System.out.println("soory, we have a shortage");
                  }
 
         System.out.print("night closing pms :");
