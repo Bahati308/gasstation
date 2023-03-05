@@ -35,12 +35,12 @@ import java.util.*;
         }
 
          else if (pms_morning_diff>0) {
-                System.out.println("woow, we have excess of :"+pms_morning_diff);
+        System.out.println("woow, we have excess of :"+pms_morning_diff+"litres");
                 
         }
         
                  else {
-                        System.out.println("soory, we have a shortage of :"+pms_morning_diff);
+        System.out.println("soory, we have a shortage of :"+pms_morning_diff+"litres");
                  }
 
         System.out.print("Evening dips PMS: ");
