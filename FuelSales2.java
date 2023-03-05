@@ -86,7 +86,6 @@ System.out.println("ago morning dips : "+ morning_dips_ago);
         double night_ago_litres =night_closing_ago-day_closing_ago;
         System.out.println("Night Shift AGO Litres : "+night_ago_litres);
 
-
         double night_sales_ago = night_ago_litres*rate_ago;
         System.out.println("Night sales AGO : "+night_sales_ago);
 
