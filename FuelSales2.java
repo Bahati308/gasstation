@@ -28,7 +28,8 @@ import java.util.*;
         double day_sales_pms = day_pms_litres*rate_pms;
         System.out.println("Day sales PMS : "+day_sales_pms);
 
-        double pms_morning_diff = morning_dips_pms-day_pms_litres; 
+        double pms_morning_diff =(day_pms_litres-morning_dips_pms);
+
         if (pms_morning_diff==0) {
                 System.out.println("woow, we balance");
         }
