@@ -46,7 +46,7 @@ import java.util.*;
                  else {
         System.out.println("soory, we have a shortage of :"+pms_morning_diff+"litres");
                  }
-        
+        System.out.println();
                  System.out.println("***AGO***");
                  System.out.print("Morning dips ago: ");
                  double morning_dips_ago = scan.nextDouble();
@@ -68,7 +68,7 @@ import java.util.*;
                  double day_sales_ago = day_ago_litres*rate_ago;
                  System.out.println("Day sales AGO : "+day_sales_ago);
                  System.out.println();
-                 
+
         System.out.println("---EVENING SECTION----");
         System.out.print("Evening dips PMS: ");
         double evening_dips_pms =scan.nextDouble();
