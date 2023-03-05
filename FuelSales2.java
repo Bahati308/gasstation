@@ -4,7 +4,6 @@ Mar 04, 2023
  * This program is aimed at 
  * easy management of a fuel station
  */
-
 import java.util.*;
  class FuelSales {
     public static void main(String[] args) {
@@ -94,6 +93,19 @@ System.out.println("ago morning dips : "+ morning_dips_ago);
 
         double total_ago_sales= night_sales_ago+day_sales_ago;
         System.out.println("Total AGO Sales: "+ total_ago_sales);
+
+        if (morning_dips_pms==day_pms_litres) {
+                System.out.println("woow, we balance");
+        }
+
+        if (morning_dips_pms<day_pms_litres) {
+                System.out.println("Sorry, we have a shortage");
+                
+        }
+        
+        else {System.out.println("we have excess");
+                
+        }
     }
    }
  }
