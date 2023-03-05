@@ -98,14 +98,14 @@ System.out.println("ago morning dips : "+ morning_dips_ago);
                 System.out.println("woow, we balance");
         }
 
-        if (morning_dips_pms<day_pms_litres) {
+         else if (morning_dips_pms<day_pms_litres) {
                 System.out.println("Sorry, we have a shortage");
                 
         }
         
-        else {System.out.println("we have excess");
-                
-        }
+                 else {
+                        System.out.println("we have excess");
+                 }
     }
    }
  }
