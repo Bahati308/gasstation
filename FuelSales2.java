@@ -16,11 +16,9 @@ System.out.println("pms morning dips : "+ morning_dips_pms);
 
         System.out.print("day opening pms :");
         double day_opening_pms = scan.nextDouble();
-        System.out.println("Day opening PMS :" + day_opening_pms);
 
         System.out.print("day closing pms :");
         double day_closing_pms = scan.nextDouble();
-        System.out.println("Day closing PMS :" + day_closing_pms);
 
         System.out.print("PMS RATE : ");
         double rate_pms = scan.nextDouble();
@@ -40,7 +38,6 @@ System.out.println("pms morning dips : "+ morning_dips_pms);
 
         System.out.print("night closing pms :");
         double night_closing_pms = scan.nextDouble();
-        System.out.println("night closing PMS :" + night_closing_pms);
 
         double night_pms_litres =night_closing_pms-day_closing_pms;
         System.out.println("Night Shift PMS Litres : "+night_pms_litres);
@@ -63,11 +60,9 @@ System.out.println("ago morning dips : "+ morning_dips_ago);
 
         System.out.print("day opening ago :");
         double day_opening_ago = scan.nextDouble();
-        System.out.println("Day opening AGO :" + day_opening_ago);
 
         System.out.print("day closing ago :");
         double day_closing_ago = scan.nextDouble();
-        System.out.println("Day closing AGO :" + day_closing_ago);
 
         System.out.print("AGO RATE : ");
         double rate_ago = scan.nextDouble();
@@ -87,7 +82,6 @@ System.out.println("ago morning dips : "+ morning_dips_ago);
 
         System.out.print("night closing ago :");
         double night_closing_ago = scan.nextDouble();
-        System.out.println("night closing AGO :" + night_closing_ago);
 
         double night_ago_litres =night_closing_ago-day_closing_ago;
         System.out.println("Night Shift AGO Litres : "+night_ago_litres);
