@@ -9,6 +9,8 @@ import java.util.*;
     public static void main(String[] args) {
     try (Scanner scan = new Scanner (System.in)) {
         // these are litres read from the tanks
+        System.out.println("----MORNING SECTION-----");
+        System.out.println();
         System.out.print("Morning dips pms: ");
         double morning_dips_pms = scan.nextDouble();
 
@@ -42,7 +44,30 @@ import java.util.*;
                  else {
         System.out.println("soory, we have a shortage of :"+pms_morning_diff+"litres");
                  }
+        
 
+
+                 System.out.print("Morning dips ago: ");
+                 double morning_dips_ago = scan.nextDouble();
+         System.out.println("ago morning dips : "+ morning_dips_ago);
+         
+         
+                 System.out.print("day opening ago :");
+                 double day_opening_ago = scan.nextDouble();
+         
+                 System.out.print("day closing ago :");
+                 double day_closing_ago = scan.nextDouble();
+         
+                 System.out.print("AGO RATE : ");
+                 double rate_ago = scan.nextDouble();
+                 double day_ago_litres =day_closing_ago-day_opening_ago;
+                 System.out.println("Day Shift AGO Litres : "+day_ago_litres);
+         
+         
+                 double day_sales_ago = day_ago_litres*rate_ago;
+                 System.out.println("Day sales AGO : "+day_sales_ago);
+                 System.out.println();
+        System.out.println("---EVENING SECTION----");
         System.out.print("Evening dips PMS: ");
         double evening_dips_pms =scan.nextDouble();
         System.out.println("pms evening dips : "+evening_dips_pms);
@@ -65,27 +90,6 @@ import java.util.*;
 
         double total_pms_sales= night_sales_pms+day_sales_pms;
         System.out.println("Total PMS Sales: "+ total_pms_sales);
-
-
-        System.out.print("Morning dips ago: ");
-        double morning_dips_ago = scan.nextDouble();
-System.out.println("ago morning dips : "+ morning_dips_ago);
-
-
-        System.out.print("day opening ago :");
-        double day_opening_ago = scan.nextDouble();
-
-        System.out.print("day closing ago :");
-        double day_closing_ago = scan.nextDouble();
-
-        System.out.print("AGO RATE : ");
-        double rate_ago = scan.nextDouble();
-        double day_ago_litres =day_closing_ago-day_opening_ago;
-        System.out.println("Day Shift AGO Litres : "+day_ago_litres);
-
-
-        double day_sales_ago = day_ago_litres*rate_ago;
-        System.out.println("Day sales AGO : "+day_sales_ago);
         
 
         System.out.print("Evening dips AGO: ");
