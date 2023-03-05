@@ -11,7 +11,6 @@ import java.util.*;
         // these are litres read from the tanks
         System.out.print("Morning dips pms: ");
         double morning_dips_pms = scan.nextDouble();
-System.out.println("pms morning dips : "+ morning_dips_pms);
 
         System.out.print("day opening pms :");
         double day_opening_pms = scan.nextDouble();
@@ -34,6 +33,20 @@ System.out.println("pms morning dips : "+ morning_dips_pms);
         System.out.println("pms evening dips : "+evening_dips_pms);
 
         System.out.println("night opening PMS :" + day_closing_pms);
+
+
+        if (morning_dips_pms==day_pms_litres) {
+                System.out.println("woow, we balance");
+        }
+
+         else if (morning_dips_pms<day_pms_litres) {
+                System.out.println("Sorry, we have a shortage");
+                
+        }
+        
+                 else {
+                        System.out.println("we have excess");
+                 }
 
         System.out.print("night closing pms :");
         double night_closing_pms = scan.nextDouble();
@@ -94,18 +107,7 @@ System.out.println("ago morning dips : "+ morning_dips_ago);
         double total_ago_sales= night_sales_ago+day_sales_ago;
         System.out.println("Total AGO Sales: "+ total_ago_sales);
 
-        if (morning_dips_pms==day_pms_litres) {
-                System.out.println("woow, we balance");
-        }
-
-         else if (morning_dips_pms<day_pms_litres) {
-                System.out.println("Sorry, we have a shortage");
-                
-        }
-        
-                 else {
-                        System.out.println("we have excess");
-                 }
+       
     }
    }
  }
