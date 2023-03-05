@@ -28,12 +28,6 @@ import java.util.*;
         double day_sales_pms = day_pms_litres*rate_pms;
         System.out.println("Day sales PMS : "+day_sales_pms);
 
-        System.out.print("Evening dips PMS: ");
-        double evening_dips_pms =scan.nextDouble();
-        System.out.println("pms evening dips : "+evening_dips_pms);
-
-        System.out.println("night opening PMS :" + day_closing_pms);
-
         double pms_morning_diff = morning_dips_pms-day_pms_litres; 
         if (pms_morning_diff==0) {
                 System.out.println("woow, we balance");
@@ -47,6 +41,13 @@ import java.util.*;
                  else {
                         System.out.println("soory, we have a shortage");
                  }
+
+        System.out.print("Evening dips PMS: ");
+        double evening_dips_pms =scan.nextDouble();
+        System.out.println("pms evening dips : "+evening_dips_pms);
+
+        System.out.println("night opening PMS :" + day_closing_pms);
+
 
         System.out.print("night closing pms :");
         double night_closing_pms = scan.nextDouble();
