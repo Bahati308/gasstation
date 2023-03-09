@@ -115,7 +115,7 @@ import java.util.*;
         double total_ago_sales= night_sales_ago+day_sales_ago;
         System.out.println("Total AGO Sales: "+ total_ago_sales);
 
-       
+//        wait for FuelSales v2.0.1
     }
    }
  }
