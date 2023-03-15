@@ -66,7 +66,6 @@ class FuelSales {
 
                         double day_sales_ago = day_ago_litres * rate_ago;
                         System.out.println("Day sales AGO : " + day_sales_ago);
-                        System.out.println();
 
                         double ago_morning_diff =(day_ago_litres-morning_dips_ago);
 
@@ -82,7 +81,8 @@ class FuelSales {
                  else {
         System.out.println("soory, we have a shortage of :"+ago_morning_diff+"litres");
                  }
-                
+
+                System.out.println();
                         System.out.println("---EVENING SECTION----");
                         System.out.print("Evening dips PMS: ");
                         double evening_dips_pms = scan.nextDouble();
