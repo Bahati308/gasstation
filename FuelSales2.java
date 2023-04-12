@@ -131,8 +131,6 @@ class FuelSales {
 
                         System.out.print("Evening dips AGO: ");
                         double evening_dips_ago = scan.nextDouble();
-                        System.out.println("ago evening dips : " + evening_dips_ago);
-
                         System.out.println("evening opening AGO :" + day_closing_ago);
 
                         System.out.print("evening closing ago :");
