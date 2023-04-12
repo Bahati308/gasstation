@@ -88,16 +88,16 @@ class FuelSales {
                         double evening_dips_pms = scan.nextDouble();
                         System.out.println("pms evening dips : " + evening_dips_pms);
 
-                        System.out.println("night opening PMS :" + day_closing_pms);
+                        System.out.println("evening opening PMS :" + day_closing_pms);
 
-                        System.out.print("night closing pms :");
+                        System.out.print("evening closing pms :");
                         double night_closing_pms = scan.nextDouble();
 
                         double night_pms_litres = night_closing_pms - day_closing_pms;
-                        System.out.println("Night Shift PMS Litres : " + night_pms_litres);
+                        System.out.println("evening Shift PMS Litres : " + night_pms_litres);
 
                         double night_sales_pms = night_pms_litres * rate_pms;
-                        System.out.println("Night sales PMS : " + night_sales_pms);
+                        System.out.println("eveningsales PMS : " + night_sales_pms);
 
                         double pms_litres = night_pms_litres + day_pms_litres;
                         System.out.println("Total PMS Litres :" + pms_litres);
@@ -109,16 +109,16 @@ class FuelSales {
                         double evening_dips_ago = scan.nextDouble();
                         System.out.println("ago evening dips : " + evening_dips_ago);
 
-                        System.out.println("night opening AGO :" + day_closing_ago);
+                        System.out.println("evening opening AGO :" + day_closing_ago);
 
-                        System.out.print("night closing ago :");
+                        System.out.print("evening closing ago :");
                         double night_closing_ago = scan.nextDouble();
 
                         double night_ago_litres = night_closing_ago - day_closing_ago;
-                        System.out.println("Night Shift AGO Litres : " + night_ago_litres);
+                        System.out.println("evening Shift AGO Litres : " + night_ago_litres);
 
                         double night_sales_ago = night_ago_litres * rate_ago;
-                        System.out.println("Night sales AGO : " + night_sales_ago);
+                        System.out.println("evening sales AGO : " + night_sales_ago);
 
                         double ago_litres = night_ago_litres + day_ago_litres;
                         System.out.println("Total AGO Litres :" + ago_litres);
