@@ -99,11 +99,21 @@ class FuelSales {
                         double night_sales_pms = night_pms_litres * rate_pms;
                         System.out.println("eveningsales PMS : " + night_sales_pms);
 
+
+                        System.out.println("----DAY SUMMARY-----");
+                        System.out.println();
+
+                        System.out.println("****PMS****");
+
                         double pms_litres = night_pms_litres + day_pms_litres;
                         System.out.println("Total PMS Litres :" + pms_litres);
 
                         double total_pms_sales = night_sales_pms + day_sales_pms;
                         System.out.println("Total PMS Sales: " + total_pms_sales);
+
+                        System.out.println();
+
+                        System.out.println("****AGO****");
 
                         System.out.print("Evening dips AGO: ");
                         double evening_dips_ago = scan.nextDouble();
@@ -119,6 +129,12 @@ class FuelSales {
 
                         double night_sales_ago = night_ago_litres * rate_ago;
                         System.out.println("evening sales AGO : " + night_sales_ago);
+
+
+                        System.out.println("----DAY SUMMARY-----");
+                        System.out.println();
+
+                        System.out.println("****AGO****");
 
                         double ago_litres = night_ago_litres + day_ago_litres;
                         System.out.println("Total AGO Litres :" + ago_litres);
