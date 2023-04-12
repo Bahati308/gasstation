@@ -87,6 +87,7 @@ class FuelSales {
                         System.out.print("Evening dips PMS: ");
                         double evening_dips_pms = scan.nextDouble();
 
+                        System.out.println("evening opening pms :" + day_closing_pms);
                         System.out.print("evening closing pms :");
                         double night_closing_pms = scan.nextDouble();
 
@@ -142,6 +143,21 @@ class FuelSales {
 
                         double night_sales_ago = night_ago_litres * rate_ago;
                         System.out.println("evening sales AGO : " + night_sales_ago);
+
+                        double ago_evening_diff =(night_ago_litres-evening_dips_ago);
+
+                        if (ago_evening_diff==0) {
+                                System.out.println("woow, we balance");
+                        }
+                
+                         else if (ago_evening_diff>0) {
+                        System.out.println("woow, we have excess of :"+ago_evening_diff+"litres");
+                
+                        }
+                
+                                 else {
+                        System.out.println("soory, we have a shortage of :"+ago_evening_diff+"litres");
+                                 }
 
 
                         System.out.println("----DAY SUMMARY-----");
